@@ -14,6 +14,7 @@ var enemies = ["Lex","Batman","Darkseid","Brainiac","General Zod","Doomsday"];
 function who_Wins(is_There_Kryptonite,enemy_Name) {
 
 if (!is_There_Kryptonite) {
+    
 
     return "Superman beats " + enemyName + ", of course";
 }
