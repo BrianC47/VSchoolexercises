@@ -1,10 +1,10 @@
 
 // Added Breakpoints, Spacing
 
-const colors = ["red", "blue", "green"];
+const colors = ["red", "blue", "green"]; // creartes array of three colors
 
 document.getElementById("add").addEventListener("click", function(e){ //changed to click from onlclick
- console.log('clicked')
+console.log('clicked')
     const subItem = createSubItem(); //removed the e
 
     document.getElementById("list").appendChild(subItem);
@@ -12,7 +12,7 @@ document.getElementById("add").addEventListener("click", function(e){ //changed 
 
 function createDropDown(){
 
-    const dropDown = document.createElement("select");
+    const dropDown = document.createElement("select"); // creates a select dropdown
 
     for (let i = 0; i < colors.length; i++){ // added .length due to colors being an array
 
@@ -39,11 +39,11 @@ function createSubItem(e){
 
     var subItemValue = document.getElementById("input");
 
-    subItem.textContent = subItemValue.value; // added .value
+    subItem.textContent = subItemValue.value; // added .value to get the typed text by the user
 
     const dropDown = createDropDown();
 
-    subItem.appendChild(dropDown);
+    subItem.appendChild(dropDown); // adds dropdown inside the new item
 
     subItem.setAttribute("class", "subItem");
 
