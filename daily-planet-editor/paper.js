@@ -11,9 +11,9 @@ just fix the existing ones.
 
 var enemies = ["Lex","Batman","Darkseid","Brainiac","General Zod","Doomsday"];
 
-function who_Wins(is_There_Kryptonite,enemy_Name) {
+function whoWins(isThereKryptonite,enemyName) {
 
-if (!is_There_Kryptonite) {
+if (!isThereKryptonite) {
     
 
     return "Superman beats " + enemyName + ", of course";
@@ -21,19 +21,19 @@ if (!is_There_Kryptonite) {
 
 else {
     
-    return "Depends on how quick Superman can get rid of the Kryptonite. "+ enemy_Name +" could possibly win this one.";
+    return "Depends on how quick Superman can get rid of the Kryptonite. "+ enemyName +" could possibly win this one.";
 }
     }
 
 for (var i = 0; i < enemies.length; i++) {
 
-    var is_There_Kryptonite:
+    var isThereKryptonite;
     if (i % 2 === 0) {
-        is_There_Kryptonite = true;
+        isThereKryptonite = true;
     } else {
-        is_There_Kryptonite = false;
+        isThereKryptonite = false;
     }
-    console.log(Who_Wins(is_There_Kryptonite,enemies[i]));
+    console.log(whoWins(isThereKryptonite,enemies[i]));
 }
 
 function howAttractedIsLoisLaneToMe () {
@@ -42,7 +42,7 @@ function howAttractedIsLoisLaneToMe () {
     return Math.floor((Math.random()*10)+1);
 }
 
-console.log( howAttractedIsLoisLaneToMe ) ;
+console.log( howAttractedIsLoisLaneToMe() ) ;
 
 var clarkKent = true;
 var superman = false;
