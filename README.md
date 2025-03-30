@@ -1,1 +1,1 @@
-This repository consists of the exercsies completed at VSchool.
+This repository consists of the exercises completed at VSchool.
