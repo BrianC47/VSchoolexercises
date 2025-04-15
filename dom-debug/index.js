@@ -1,7 +1,7 @@
 
 // Added Breakpoints, Spacing
 
-const colors = ["red", "blue", "green"]; // creartes array of three colors
+const colors = ["red", "blue", "green"]; // creates array of three colors
 
 document.getElementById("add").addEventListener("click", function(e){ //changed to click from onlclick
 console.log('clicked')
