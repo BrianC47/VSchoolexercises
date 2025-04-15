@@ -11,39 +11,6 @@
  
 // // They die if they put their hand in the hole.
 
-// // Declare some variables
-
-// let hasKey = false;
-// let isAlive = true;
-// let hasEscaped = false;
-
-
-
-// const readline = require("readline-sync");
-
-// // Ask User for their name
-
-// const name = readline.question("What is your name?");
-// console.log('Hello ' + name + ' welcome to the escape room');
-
-// let option = readline.keyIn("What would you like to do (1) Find the Key, (2) Put hand in the hole, (3) Open the door", {limit: '1234'});
-
-// if (option = 1){
-//         let hasKey = true;
-//         console.log('User chose option '+ option);
-//         console.log("You have found the key!", hasKey)
-//     }
-//     else if (option = 1 && hasKey){
-//         console.log("You already have the key")
-
-//     }
-
-
-
-
-
-
-
 
 const readline = require("readline-sync");
 
@@ -54,7 +21,7 @@ let hasEscaped = false;
 const name = readline.question("What is your name? ");
 console.log(`Hello ${name}, welcome to the escape room!`);
 
-while (isAlive && !hasEscaped) {
+while (isAlive && !hasEscaped) { // loop runs as long as the player is alive and hasn't escaped
   console.log("\nWhat would you like to do?");
   console.log("1. Find the key");
   console.log("2. Put hand in the hole");
