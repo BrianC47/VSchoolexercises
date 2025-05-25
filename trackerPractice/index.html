@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Session Tracker</title>
+</head>
+<body>
+  <div id="sessionTime">Session Time: 0 seconds</div>
+  <div id="totalTime">Total Time: 0 seconds</div>
+
+  <script>
+    // Initialize or retrieve values
+    let sessionTime = Number(sessionStorage.getItem("sessionTime")) || 0; // Number... converts the value from string to number, storage saves as strings
+    let totalTime = Number(localStorage.getItem("totalTime")) || 0; // localStorage persists after the broswer is closed
+
+    // Get references to DOM elements
+    const sessionDiv = document.getElementById("sessionTime");
+    const totalDiv = document.getElementById("totalTime");
+
+    // Initial display
+    sessionDiv.textContent = `Session Time: ${sessionTime} seconds`;
+    totalDiv.textContent = `Total Time: ${totalTime} seconds`;
+
+    // Update every second
+    const intervalId = setInterval(() => { // runs repreatedly 
+      sessionTime++;
+      totalTime++;
+
+      // Update display
+      sessionDiv.textContent = `Session Time: ${sessionTime} seconds`; 
+      totalDiv.textContent = `Total Time: ${totalTime} seconds`;
+
+      // Save to storage
+      sessionStorage.setItem("sessionTime", sessionTime); // Saves updated values back into to storage
+      localStorage.setItem("totalTime", totalTime);
+    }, 1000);
+
+    // Alert after 10 seconds
+    setTimeout(() => {
+      alert("10 seconds passed!");  // 10 seconds after the current session starts
+    }, 10000);
+  </script>
+</body>
+</html>
+

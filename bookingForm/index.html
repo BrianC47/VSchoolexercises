@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Flight Booking Form</title>
+        <link rel="stylesheet" href="styles.css" />
+    </head>
+    <body>
+        <div class="container">
+            <h1>Flight Booking Form</h1>
+            <form id="bookingForm">
+                <div>
+                    <label for="firstName" class="form-label"
+                        >First Name:</label
+                    >
+                    <input
+                        type="text"
+                        class="form-control"
+                        id="firstName"
+                        name="firstName" />
+                </div>
+                <div class>
+                    <label for="lastName" class="form-label">Last Name:</label>
+                    <input
+                        type="text"
+                        class="form-control"
+                        id="lastName"
+                        name="lastName" />
+                </div>
+                <div>
+                    <label for="age" class="form-label">Age:</label>
+                    <input
+                        type="number"
+                        class="form-control"
+                        id="age"
+                        name="age" />
+                </div>
+                <fieldset>
+                    <legend>Gender:</legend>
+                    <div class="form-check">
+                        <input
+                            type="radio"
+                            class="form-check-input"
+                            id="male"
+                            name="gender"
+                            value="male" />
+                        <label for="male" class="form-check-label">Male</label>
+                    </div>
+                    <div class="form-check">
+                        <input
+                            type="radio"
+                            class="form-check-input"
+                            id="female"
+                            name="gender"
+                            value="female" />
+                        <label for="female" class="form-check-label"
+                            >Female</label
+                        >
+                    </div>
+                    <div class="form-check">
+                        <input
+                            type="radio"
+                            class="form-check-input"
+                            id="prefer-not-to-answer"
+                            name="gender"
+                            value="prefer-not-to-answer" />
+                        <label
+                            for="prefer-not-to-answer"
+                            class="form-check-label"
+                            >Prefer not to answer</label
+                        >
+                    </div>
+                </fieldset>
+                <div>
+                    <label for="destination" class="form-label"
+                        >Traveling to:</label
+                    >
+                    <select
+                        class="form-select"
+                        id="destination"
+                        name="destination">
+                        <option value="newyork">New York</option>
+                        <option value="london">London</option>
+                        <option value="tokyo">Tokyo</option>
+                        <option value="saharadesert">Sahara Desert</option>
+                    </select>
+                </div>
+                <fieldset>
+                    <legend>Dietary Restrictions:</legend>
+                    <div class="form-check">
+                        <input
+                            type="checkbox"
+                            class="form-check-input"
+                            id="vegetarian"
+                            name="vegetarian" />
+                        <label for="vegetarian" class="form-check-label"
+                            >Vegetarian</label
+                        >
+                    </div>
+                    <div class="form-check">
+                        <input
+                            type="checkbox"
+                            class="form-check-input"
+                            id="kosher"
+                            name="kosher" />
+                        <label for="kosher" class="form-check-label"
+                            >Kosher</label
+                        >
+                    </div>
+                    <div class="form-check">
+                        <input
+                            type="checkbox"
+                            class="form-check-input"
+                            id="lactosefree"
+                            name="lactosefree" />
+                        <label for="lactosefree" class="form-check-label"
+                            >Lactose Free</label
+                        >
+                    </div>
+                </fieldset>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>

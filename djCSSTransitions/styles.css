@@ -1,0 +1,66 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+
+}
+.container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px;
+}
+
+.box{
+    display: flex;
+    justify-content: center;
+    border: 2px solid black;
+    padding: 40px;
+    margin: 10px;
+    background-color: aqua;
+}
+
+.box-1{
+    transition: background-color 0.5s ease, border-radius 0.5s ease;
+}
+.box-1:hover{
+    background-color: red;
+    border-radius: 50%;
+}
+
+.box-2{
+    transition: border 0.5s ease;
+}
+.box-2:hover{
+    border: 10px solid green;
+}
+
+.box-3{
+    transition: font-size 0.5s ease;
+}
+.box-3:hover{
+    font-size: 30px;
+}
+
+.box-4{
+    transition: box-shadow 0.5s ease, opacity 0.5s ease;
+}
+.box-4:hover{
+    box-shadow: 10px 5px 5px red;
+    opacity: 0.33;
+}
+.box-5{
+    transition: background-color 0.5s ease;
+
+}
+.box-5:hover{
+    background-color: lightgreen;
+}
+
+.box-6{
+    transition: transform 0.5s ease, background-color 0.5s ease 
+
+}
+.box-6:hover{
+    transform: rotate(0.5turn); 
+    background-color: lightpink;
+
+}
